@@ -3,254 +3,116 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Abstract Notion</title>
-<meta name="description" content="Abstract Notion Inc. is a creative studio and software company in Minneola, Florida. A motion, VFX, and large-scale production studio with twenty-five years of experience, and the maker of Project Intelligence, a project-context and handoff tool for Adobe After Effects.">
+<title>Abstract Notion — Creative studio & software, Minneola, Florida</title>
+<meta name="description" content="Abstract Notion Inc. is a creative studio and software company in Minneola, Florida: twenty-five years of motion, VFX, and large-scale visual production, and the maker of Project Intelligence for Adobe After Effects.">
+<link rel="canonical" href="https://abstractnotion.io/">
+<meta property="og:site_name" content="Abstract Notion">
+<meta property="og:title" content="Abstract Notion — Creative studio & software, Minneola, Florida">
+<meta property="og:description" content="Abstract Notion Inc. is a creative studio and software company in Minneola, Florida: twenty-five years of motion, VFX, and large-scale visual production, and the maker of Project Intelligence for Adobe After Effects.">
+<meta property="og:url" content="https://abstractnotion.io/">
+<meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3E%3Ccircle cx=%278%27 cy=%278%27 r=%276.4%27 fill=%27none%27 stroke=%27%2313161d%27 stroke-width=%271.6%27/%3E%3Ccircle cx=%278%27 cy=%278%27 r=%272.6%27 fill=%27%231f3fd6%27/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --paper:#eceef3; --paper-2:#e1e4ec; --ink:#13161d; --ink-2:#464b58; --mute:#7d8393;
-    --line:#c9cdd8; --accent:#1f3fd6; --accent-ink:#fff;
-    color-scheme: light;
-  }
-  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
-    --paper:#13161d; --paper-2:#1b1f28; --ink:#eceef3; --ink-2:#b9bec9; --mute:#767c8a;
-    --line:#2b303b; --accent:#5b78ff; --accent-ink:#0b0f2a; color-scheme: dark; } }
-  :root[data-theme="dark"]{
-    --paper:#13161d; --paper-2:#1b1f28; --ink:#eceef3; --ink-2:#b9bec9; --mute:#767c8a;
-    --line:#2b303b; --accent:#5b78ff; --accent-ink:#0b0f2a; color-scheme: dark; }
-
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{margin:0;background:var(--paper);color:var(--ink);font-family:"IBM Plex Sans",ui-sans-serif,system-ui,sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;
-    background-image:radial-gradient(1200px 600px at 80% -10%, color-mix(in srgb,var(--accent) 9%,transparent), transparent 60%);}
-  body::after{content:"";position:fixed;inset:0;pointer-events:none;opacity:.055;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
-  a{color:inherit}
-  a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-  .wrap{max-width:1180px;margin:0 auto;padding:0 clamp(20px,4vw,48px)}
-  .mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
-  h1,h2,h3{font-family:"Instrument Sans",ui-sans-serif,system-ui,sans-serif;font-weight:400;letter-spacing:-.03em;margin:0}
-  h2{font-size:clamp(34px,4.6vw,58px);line-height:1.02;text-wrap:balance}
-  h3{font-size:26px;font-weight:600;letter-spacing:-.015em}
-  em{font-style:normal;font-weight:700}
-  p{margin:0 0 1em}
-
-  /* nav */
-  nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--paper) 82%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
-  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:"Instrument Sans",sans-serif;font-weight:700;font-size:19px;letter-spacing:-.01em}
-  .brand svg{width:15px;height:15px;display:block}
-  nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0}
-  nav ul a{text-decoration:none;font-size:14px;color:var(--ink-2)}
-  nav ul a:hover{color:var(--accent)}
-  @media(max-width:640px){nav ul{display:none}}
-
-  /* hero */
-  .hero{padding:clamp(72px,11vw,150px) 0 clamp(56px,8vw,110px);border-bottom:1px solid var(--line)}
-  .hero h1{font-size:clamp(44px,7.6vw,108px);line-height:.98;max-width:14ch;text-wrap:balance}
-  .hero h1 em{color:var(--accent)}
-  .hero .lede{max-width:52ch;font-size:clamp(17px,1.6vw,21px);color:var(--ink-2);margin-top:32px}
-  .hero .meta{display:flex;gap:32px;flex-wrap:wrap;margin-top:40px}
-  .reveal{opacity:0;transform:translateY(14px);animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
-  .d1{animation-delay:.05s}.d2{animation-delay:.18s}.d3{animation-delay:.32s}.d4{animation-delay:.46s}
-  @keyframes rise{to{opacity:1;transform:none}}
-
-  /* sections */
-  section{padding:clamp(64px,9vw,120px) 0;border-bottom:1px solid var(--line)}
-  .head{display:grid;gap:14px;align-items:end;margin-bottom:clamp(36px,5vw,64px)}
-  .eyebrow{font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
-  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,56px)}
-  @media(max-width:760px){.grid2{grid-template-columns:1fr}}
-  .grid3{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,56px);margin-top:clamp(48px,6vw,80px)}
-  @media(max-width:760px){.grid3{grid-template-columns:1fr}}
-  .grid3 .card h3{font-size:22px}
-  .grid3 .card p{font-size:15.5px}
-  .card{border-top:2px solid var(--ink);padding-top:22px}
-  .card .mono{display:block;margin-bottom:14px}
-  .card h3{margin-bottom:12px}
-  .card p{color:var(--ink-2)}
-  .card ul{margin:14px 0 0;padding:0;list-style:none;color:var(--ink-2)}
-  .card li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:15px}
-  .card li:last-child{border:0}
-
-  /* product */
-  .product{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,5vw,72px);align-items:center}
-  @media(max-width:860px){.product{grid-template-columns:1fr}}
-  .product p{color:var(--ink-2);max-width:48ch}
-  .badge{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:5px 10px;border-radius:999px;font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:18px}
-  .frame{aspect-ratio:4/3;border:1px solid var(--line);background:var(--paper-2);position:relative;overflow:hidden}
-  .frame::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:32px 32px;opacity:.6}
-  .frame .tag{position:absolute;bottom:14px;left:14px;font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--mute);z-index:3}
-  .pi-rows{position:absolute;left:9%;top:14%;width:46%;height:60%;display:flex;flex-direction:column;justify-content:space-between;z-index:2}
-  .pi-row{display:flex;align-items:center;gap:6px;height:11%}
-  .pi-bar{height:100%;background:var(--ink);opacity:.16;border-radius:3px;flex:1}
-  .pi-bar.s{flex:.5}.pi-bar.m{flex:.75}
-  .pi-c{width:18%;height:100%;background:var(--accent);border-radius:3px;position:relative;flex:none}
-  .pi-c::after{content:"";position:absolute;left:12%;bottom:-26%;border:4px solid transparent;border-top-color:var(--accent);border-left-color:var(--accent)}
-  .pi-strip{position:absolute;right:-4%;top:8%;width:44%;height:88%;z-index:1}
-  .pi-fr{position:absolute;width:100%;aspect-ratio:16/9;background:var(--paper);border:1px solid var(--line);box-shadow:0 10px 24px color-mix(in srgb,var(--ink) 10%,transparent);overflow:hidden}
-  .pi-fr::before,.pi-fr::after{content:"";position:absolute;left:0;right:0;height:9%;background:repeating-linear-gradient(90deg,var(--line) 0 9%,transparent 9% 20%)}
-  .pi-fr::before{top:0}.pi-fr::after{bottom:0}
-  .pi-fr b{position:absolute;width:30%;aspect-ratio:1;border-radius:50%;background:var(--accent);top:32%}
-  .pi-fr:nth-child(1){top:0;left:0;transform:rotate(-8deg)}.pi-fr:nth-child(1) b{left:10%}
-  .pi-fr:nth-child(2){top:24%;left:6%;transform:rotate(-5deg)}.pi-fr:nth-child(2) b{left:28%}
-  .pi-fr:nth-child(3){top:48%;left:12%;transform:rotate(-2deg)}.pi-fr:nth-child(3) b{left:46%}
-  .pi-fr:nth-child(4){top:72%;left:18%;transform:rotate(1deg)}.pi-fr:nth-child(4) b{left:62%}
-
-  /* facts */
-  .facts{width:100%;border-collapse:collapse;font-size:15.5px}
-  .facts td{padding:14px 0;border-bottom:1px solid var(--line);vertical-align:top}
-  .facts td:first-child{width:38%;color:var(--mute);font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;padding-top:17px}
-  .about p{color:var(--ink-2);max-width:60ch;font-size:clamp(17px,1.4vw,19px)}
-  .about .mono a:hover{color:var(--accent)}
-
-  /* contact */
-  .contact{background:var(--ink);color:var(--paper);border:0}
-  .contact h2{color:var(--paper)}
-  .contact a.big{display:inline-block;font-family:"Instrument Sans",sans-serif;font-size:clamp(26px,4.2vw,54px);font-weight:400;text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--paper) 35%,transparent);padding-bottom:6px;margin-top:24px;letter-spacing:-.02em}
-  .contact a.big:hover{color:var(--accent);border-color:var(--accent)}
-  .contact .mono{color:color-mix(in srgb,var(--paper) 55%,transparent)}
-  .contact .grid2{margin-top:56px}
-  .contact .card{border-top-color:color-mix(in srgb,var(--paper) 30%,transparent)}
-  .contact .card p,.contact .card li{color:color-mix(in srgb,var(--paper) 75%,transparent)}
-  .contact .card li{border-color:color-mix(in srgb,var(--paper) 20%,transparent)}
-
-  footer{padding:32px 0;font-size:13px;color:var(--mute)}
-  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-  @media (prefers-reduced-motion:reduce){.reveal{animation:none;opacity:1;transform:none}}
-</style>
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Abstract Notion Inc.", "legalName": "Abstract Notion Inc.", "url": "https://abstractnotion.io/", "email": "hector@abstractnotion.io", "telephone": "+14079278105", "foundingDate": "2023-01-31", "founder": {"@type": "Person", "name": "Hector J. Ortiz"}, "address": {"@type": "PostalAddress", "streetAddress": "326 Valley Edge Dr.", "addressLocality": "Minneola", "addressRegion": "FL", "postalCode": "34515", "addressCountry": "US"}, "description": "Creative studio and software company: motion, VFX, and large-scale visual production, and the maker of Project Intelligence for Adobe After Effects."}</script>
 </head>
 <body>
-
-<nav>
+<a class="skip" href="#main">Skip to content</a>
+<nav class="top" aria-label="Main">
   <div class="wrap">
-    <a class="brand" href="#top"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="2.6" fill="var(--accent)"/></svg>Abstract Notion</a>
+    <a class="brand" href="/"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="2.6" fill="var(--accent)"/></svg>Abstract Notion</a>
     <ul>
-      <li><a href="#studio">Studio</a></li>
-      <li><a href="#products">Products</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="/studio/">Studio</a></li>
+      <li><a href="/project-intelligence/">Project Intelligence</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/contact/">Contact</a></li>
     </ul>
   </div>
 </nav>
-
-<header class="hero" id="top">
+<main id="main">
+<header class="hero">
   <div class="wrap">
     <div class="mono reveal d1">Creative studio &amp; software · Minneola, Florida</div>
     <h1 class="reveal d2" style="margin-top:22px">Production experience, <em>in two forms.</em></h1>
     <p class="lede reveal d3">A studio and a software company under one roof. The studio brings twenty-five years of motion, VFX, and large-scale production to agencies, brands, and themed entertainment. The products side builds software for motion artists and the teams around them — starting with Project Intelligence for After Effects.</p>
-    <div class="meta reveal d4">
-      <span class="mono">Est. 2023</span>
-      <span class="mono">Abstract Notion Inc.</span>
-      <span class="mono"><a href="mailto:hector@abstractnotion.io" style="text-decoration:none">hector@abstractnotion.io</a></span>
+    <div class="actions reveal d4">
+      <a class="btn" href="/contact/">Start a project</a>
+      <a class="btn ghost" href="/project-intelligence/">See Project Intelligence</a>
     </div>
   </div>
 </header>
 
-<section id="studio">
+<section>
   <div class="wrap">
     <div class="head">
-      <div class="eyebrow">Studio</div>
-      <h2>Twenty-five years of taking on <em>production challenges.</em></h2>
+      <div class="eyebrow">Two sides of one company</div>
+      <h2>A studio that ships, and the <em>tools it wished it had.</em></h2>
     </div>
     <div class="grid2">
-      <div class="card">
-        <span class="mono">What we do</span>
-        <h3>Motion, VFX, and large-scale visual production</h3>
-        <p>From thirty-second spots to media projected across landmark architecture. The common thread is work that has to hold up on a real deadline, at real scale, in front of a real audience.</p>
-        <ul>
-          <li>Commercials — 30+ produced for a national retailer</li>
-          <li>Motion graphics, animation, and visual effects</li>
-          <li>3D modeling, lookdev, and rendering</li>
-          <li>Projection mapping and themed-entertainment media for theme parks worldwide</li>
-          <li>Generative-AI-assisted stills and video, art-directed from previz</li>
-        </ul>
-      </div>
-      <div class="card">
-        <span class="mono">How we work</span>
-        <h3>The right hat for the project</h3>
-        <p>Hector J. Ortiz directs, supervises visual effects, produces, or builds — whichever role the project needs — and assembles the crew around it. Projects are taken on where that experience meets a real challenge, not just fills a seat.</p>
-        <ul>
-          <li>Director, VFX supervisor, producer, or artist, depending on the job</li>
-          <li>Crews assembled per project and scaled to it</li>
-          <li>Direct with brands and studios, or as a production partner to agencies</li>
-          <li>Organized, documented source files handed over with every delivery</li>
-        </ul>
-      </div>
+      <a class="pillar" href="/studio/">
+        <span class="mono">Studio services</span>
+        <h3>Motion, VFX &amp; large-scale visual production</h3>
+        <p>Commercials, motion graphics, visual effects, color, and media for LED walls, projection mapping, and themed entertainment — directed, supervised, or built by a twenty-five-year production veteran.</p>
+        <span class="go">Explore the studio →</span>
+      </a>
+      <a class="pillar" href="/project-intelligence/">
+        <span class="mono">Software · In private testing</span>
+        <h3>Project Intelligence for After Effects</h3>
+        <p>A companion app that captures how an After Effects project is built — comments, structure, assets, fonts, colors, and thumbnails — so anyone can understand it without opening it.</p>
+        <span class="go">Explore the product →</span>
+      </a>
     </div>
   </div>
 </section>
 
-<section id="products">
+<section>
   <div class="wrap">
     <div class="head">
-      <div class="eyebrow">Products</div>
-      <h2>Know how a project is built <em>without opening it.</em></h2>
+      <div class="eyebrow">Capabilities</div>
+      <h2>Built for work that has to hold up <em>at real scale.</em></h2>
     </div>
-    <div class="product">
-      <div>
-        <span class="badge">In development · For After Effects</span>
-        <h3 style="font-size:clamp(30px,3.6vw,44px);margin-bottom:16px">Project Intelligence</h3>
-        <p>A companion app for Adobe After Effects that captures how a project is built — its comments, structure, assets, fonts, colors, and thumbnails — and keeps that context readable by anyone, inside or outside After Effects.</p>
-        <p>Every project you've worked on becomes a record you can hand off, revisit, or archive with confidence, instead of a heavy file only its author understands.</p>
-        <p class="mono" style="margin-top:22px">macOS &amp; Windows · Private testing · <a href="https://projectintelligence.io" style="text-decoration:none">projectintelligence.io</a></p>
-      </div>
-      <div class="frame">
-        <div class="pi-rows">
-          <div class="pi-row"><div class="pi-bar"></div></div>
-          <div class="pi-row"><div class="pi-bar m"></div><div class="pi-c"></div></div>
-          <div class="pi-row"><div class="pi-bar s"></div></div>
-          <div class="pi-row"><div class="pi-bar"></div><div class="pi-c"></div></div>
-          <div class="pi-row"><div class="pi-bar m"></div></div>
-          <div class="pi-row"><div class="pi-bar s"></div><div class="pi-c"></div></div>
-        </div>
-        <div class="pi-strip"><div class="pi-fr"><b></b></div><div class="pi-fr"><b></b></div><div class="pi-fr"><b></b></div><div class="pi-fr"><b></b></div></div>
-        <div class="tag">projectintelligence.io</div>
-      </div>
-    </div>
-    <div class="grid3">
+    <div class="grid3 small">
       <div class="card">
-        <span class="mono">Comments, promoted</span>
-        <h3>Notes that survive the project</h3>
-        <p>After Effects lets you comment on any layer or item, but nothing ever surfaces those comments. In a project with hundreds of layers, a note only helps if you already know where it is. Project Intelligence lists every comment in the project in one place — inside After Effects or out — and lets you organize and tag them, so you can leave a crumb trail for your future self or the next artist.</p>
+        <span class="mono">01 · Spots &amp; campaigns</span>
+        <h3>Commercial production</h3>
+        <p>Thirty-plus commercials produced for a national retailer, from concept and previz through finishing and delivery specs.</p>
       </div>
       <div class="card">
-        <span class="mono">Handoff &amp; archive</span>
-        <h3>Diagnose in minutes, not days</h3>
-        <p>Mark which comps are the render comps and which ones matter, and write notes alongside them about how the project is wired up and how the compositions relate. Whoever opens it next — another artist, or you in three years — gets a map of the build before opening a single comp, instead of days spent reverse-engineering it.</p>
+        <span class="mono">02 · Experiential</span>
+        <h3>Themed &amp; live-show media</h3>
+        <p>Content for projection mapping, LED walls, and media servers in theme parks and live shows worldwide, built to the venue's pixel map.</p>
       </div>
       <div class="card">
-        <span class="mono">Visual record</span>
-        <h3>A flipbook of every project</h3>
-        <p>Project Intelligence captures thumbnails, not just metadata — for every composition, or every asset in the project, your choice. Each one gets a short sequence of frames rather than a single still, so you can recognize a comp at a glance without rendering or opening anything.</p>
-      </div>
-      <div class="card">
-        <span class="mono">Offline library</span>
-        <h3>Answers without chasing the artist</h3>
-        <p>Every project is indexed into a library the whole team can search offline. Artists, leads, and producers can look up which fonts, colors, logo version, and file paths a past project used — without launching After Effects or waiting on whoever built it.</p>
+        <span class="mono">03 · Finishing</span>
+        <h3>VFX, color &amp; 3D</h3>
+        <p>Compositing, color grading including HDR workflows, 3D modeling, lookdev, and rendering — with organized, documented source files on every delivery.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="about" class="about">
+<section class="tight">
   <div class="wrap">
-    <div class="head">
-      <div class="eyebrow">About</div>
-      <h2>Experience on one side, <em>tools on the other.</em></h2>
-    </div>
-    <div class="about-body">
-      <p>Abstract Notion was founded by Hector J. Ortiz after twenty-five years in motion design, visual effects, and themed entertainment — directing, supervising VFX, and producing for brands, agencies, and theme parks around the world.</p>
-      <p>The studio takes on production work where that experience makes a difference. The products side builds the software that experience showed was missing, starting with Project Intelligence for After Effects.</p>
-      <p class="mono" style="margin-top:28px"><a href="mailto:hector@abstractnotion.io" style="text-decoration:none">hector@abstractnotion.io</a></p>
+    <div class="grid2">
+      <div class="head" style="margin-bottom:0">
+        <div class="eyebrow">Company</div>
+        <h2>At a <em>glance.</em></h2>
+      </div>
+      <table class="facts">
+        <tr><th scope="row">Legal name</th><td>Abstract Notion Inc.</td></tr>
+        <tr><th scope="row">Entity</th><td>Florida corporation, incorporated January 2023</td></tr>
+        <tr><th scope="row">Founder &amp; President</th><td>Hector J. Ortiz</td></tr>
+        <tr><th scope="row">Headquarters</th><td>326 Valley Edge Dr., Minneola, FL 34515</td></tr>
+        <tr><th scope="row">Phone</th><td><a href="tel:+14079278105">(407) 927-8105</a></td></tr>
+        <tr><th scope="row">Email</th><td><a href="mailto:hector@abstractnotion.io">hector@abstractnotion.io</a></td></tr>
+      </table>
     </div>
   </div>
 </section>
 
-<section id="contact" class="contact">
+<section class="contact">
   <div class="wrap">
     <div class="mono">Contact</div>
     <h2 style="margin-top:14px">Working on something?</h2>
@@ -267,11 +129,36 @@
     </div>
   </div>
 </section>
-
-<footer>
+</main>
+<footer class="site">
   <div class="wrap">
-    <span>© 2023–2026 Abstract Notion Inc. · Minneola, Florida</span>
-    <span>abstractnotion.io · <a href="mailto:hector@abstractnotion.io" style="text-decoration:none">hector@abstractnotion.io</a></span>
+    <div class="cols">
+      <div>
+        <h4>Abstract Notion Inc.</h4>
+        <address>326 Valley Edge Dr.<br>Minneola, FL 34515<br>United States</address>
+        <p style="margin-top:12px"><a href="tel:+14079278105">(407) 927-8105</a><br><a href="mailto:hector@abstractnotion.io">hector@abstractnotion.io</a></p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/studio/">Studio</a></li>
+          <li><a href="/project-intelligence/">Project Intelligence</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/privacy/">Privacy Policy</a></li>
+          <li><a href="/terms/">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2023–2026 Abstract Notion Inc. · A Florida corporation</span>
+      <span>abstractnotion.io</span>
+    </div>
   </div>
 </footer>
 </body>
