@@ -28,7 +28,7 @@ CO = {
 }
 
 NAV = [("studio", "/studio/", "Studio"),
-       ("pi", "/project-intelligence/", "Project Intelligence"),
+       ("pi", "/software/", "Project Intelligence"),
        ("about", "/about/", "About"),
        ("contact", "/contact/", "Contact")]
 
@@ -114,7 +114,7 @@ def footer():
         <h4>Company</h4>
         <ul>
           <li><a href="/studio/">Studio</a></li>
-          <li><a href="/project-intelligence/">Project Intelligence</a></li>
+          <li><a href="/software/">Project Intelligence</a></li>
           <li><a href="/about/">About</a></li>
           <li><a href="/contact/">Contact</a></li>
         </ul>

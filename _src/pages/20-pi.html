@@ -1,21 +1,21 @@
 <!--
-title: Project Intelligence for After Effects · Abstract Notion
-description: Project Intelligence is a companion app for Adobe After Effects that captures a project's comments, structure, assets, fonts, colors, and thumbnails, so anyone can understand, hand off, or archive it without opening it. macOS and Windows, in private testing.
-path: project-intelligence/
+title: Project Intelligence — the archive for After Effects projects · Abstract Notion
+description: Project Intelligence captures everything about an After Effects project — comps and how they're wired, the artist's notes, media used and where it lived, fonts, colors, and thumbnails — into one offline record you can search years later, even when the project won't open.
+path: software/
 nav: pi
 -->
 <header class="pagehead">
   <div class="wrap product">
     <div>
       <span class="badge reveal d1">In private testing · For After Effects</span>
-      <h1 class="reveal d2" style="margin-top:6px">Know how a project is built <em>without opening it.</em></h1>
-      <p class="lede reveal d3">Project Intelligence is a companion app for Adobe After Effects. It captures how a project is built — its comments, structure, assets, fonts, colors, and thumbnails — and keeps that context readable by anyone, inside or outside After Effects.</p>
+      <h1 class="reveal d2" style="margin-top:6px">The archive your After Effects projects <em>never had.</em></h1>
+      <p class="lede reveal d3">Project Intelligence collects everything about a project — its comps and how they're wired, the original artist's notes, the media it used and where that media lived, fonts, colors, and frame thumbnails — into one offline record. Years later, you can answer anything about the project without opening it, even when it won't open.</p>
       <div class="actions reveal d4">
         <a class="btn" href="mailto:{{email}}?subject=Project%20Intelligence%20early%20access">Request early access</a>
-        <a class="btn ghost" href="#features">How it works</a>
+        <a class="btn ghost" href="#captures">What it captures</a>
       </div>
     </div>
-    <div class="frame reveal d3" role="img" aria-label="Illustration: a list of After Effects comments beside a stack of thumbnail frames">
+    <div class="frame reveal d3" role="img" aria-label="Illustration: a list of project notes beside a stack of thumbnail frames">
       <div class="pi-rows">
         <div class="pi-row"><div class="pi-bar"></div></div>
         <div class="pi-row"><div class="pi-bar m"></div><div class="pi-c"></div></div>
@@ -34,47 +34,70 @@ nav: pi
   <div class="wrap">
     <div class="head">
       <div class="eyebrow">The problem</div>
-      <h2>Every After Effects project is a black box <em>to everyone but its author.</em></h2>
+      <h2>You open an old project, <em>and it's broken.</em></h2>
     </div>
-    <div class="grid2">
-      <p class="lede" style="margin-top:0">A finished project can hold hundreds of comps and thousands of layers. The knowledge of how it is wired — which comp renders, which pre-comp drives the logo, which font the client approved — lives in one artist's head.</p>
-      <p class="lede" style="margin-top:0">When that artist moves on, the next person spends days reverse-engineering the file. Project Intelligence turns every project into a record you can hand off, revisit, or archive with confidence.</p>
+    <div class="grid3 small">
+      <div class="card">
+        <span class="mono">The media moved</span>
+        <h3>Missing footage, everywhere</h3>
+        <p>Drives get retired, servers get reorganized, and the project opens to a wall of color bars. You can't tell what the missing files were, let alone where to find them.</p>
+      </div>
+      <div class="card">
+        <span class="mono">The author is gone</span>
+        <h3>No one to ask</h3>
+        <p>The artist who built it moved on, left the agency, or simply can't remember. The knowledge of how the project works left with them.</p>
+      </div>
+      <div class="card">
+        <span class="mono">Even when it opens</span>
+        <h3>No context in the file</h3>
+        <p>A working project still won't tell you which comp is the main render, how the pre-comps relate, or why it was built that way. That lived in someone's head.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="features">
+<section id="captures">
   <div class="wrap">
     <div class="head">
-      <div class="eyebrow">Features</div>
-      <h2>What it <em>captures.</em></h2>
+      <div class="eyebrow">What it captures</div>
+      <h2>One record that <em>outlives the project file.</em></h2>
     </div>
     <div class="grid2 small">
       <div class="card">
-        <span class="mono">Comments, promoted</span>
-        <h3>Notes that survive the project</h3>
-        <p>After Effects lets you comment on any layer or item, but nothing ever surfaces those comments. Project Intelligence lists every comment in the project in one place — inside After Effects or out — and lets you organize and tag them, so you can leave a crumb trail for your future self or the next artist.</p>
+        <span class="mono">Structure</span>
+        <h3>How it's wired</h3>
+        <p>Every composition, how they nest and relate, and which ones are the render comps that matter — a map of the build you can read before, or instead of, opening a single comp.</p>
       </div>
       <div class="card">
-        <span class="mono">Handoff &amp; archive</span>
-        <h3>Diagnose in minutes, not days</h3>
-        <p>Mark which comps are the render comps and which ones matter, and write notes about how the project is wired and how the compositions relate. Whoever opens it next gets a map of the build before opening a single comp.</p>
+        <span class="mono">The artist's context</span>
+        <h3>Notes that travel with the project</h3>
+        <p>Every After Effects comment in the project, gathered in one place, plus notes the artist adds about how it all works: "This is the main comp. This pre-comp drives the logo. Swap the date here."</p>
+      </div>
+      <div class="card">
+        <span class="mono">Media inventory</span>
+        <h3>What it used, and where it lived</h3>
+        <p>Every footage and image item the project referenced, with its name, format, and original path, so you know exactly what to relink or re-source when media has moved.</p>
       </div>
       <div class="card">
         <span class="mono">Visual record</span>
-        <h3>A flipbook of every project</h3>
-        <p>Project Intelligence captures thumbnails, not just metadata — for every composition, or every asset, your choice. Each one gets a short sequence of frames rather than a single still, so you can recognize a comp at a glance without rendering anything.</p>
+        <h3>A flipbook of every comp</h3>
+        <p>Thumbnails captured as a short sequence of frames, not a single still, so you can recognize a comp or asset at a glance without rendering anything, or even having the media.</p>
       </div>
       <div class="card">
-        <span class="mono">Offline library</span>
-        <h3>Answers without chasing the artist</h3>
-        <p>Every project is indexed into a library the whole team can search offline. Artists, leads, and producers can look up which fonts, colors, logo version, and file paths a past project used — without launching After Effects.</p>
+        <span class="mono">Look &amp; type</span>
+        <h3>Fonts and colors</h3>
+        <p>The typefaces and color values the project used, ready to look up when a client asks for "the same thing as last year."</p>
+      </div>
+      <div class="card">
+        <span class="mono">Technical detail</span>
+        <h3>Effects, plugins &amp; expressions</h3>
+        <p>Which plugins and effects the project depends on and the expressions that drive it, so you know what a machine needs before you try to open the file.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SCREENSHOTS: replace this section's figures with real captures in /assets/pi/ -->
+<!-- SCREENSHOTS: add real captures to /assets/pi/ and remove `hidden` -->
 <section id="screens" hidden>
   <div class="wrap">
     <div class="head">
@@ -91,15 +114,55 @@ nav: pi
 
 <section>
   <div class="wrap">
+    <div class="grid2">
+      <div class="head" style="margin-bottom:0">
+        <div class="eyebrow">Real data</div>
+        <h2>Read from the project, <em>not guessed.</em></h2>
+      </div>
+      <div>
+        <p class="lede" style="margin-top:0">Everything in a Project Intelligence record is read directly from the After Effects project or written by the artist who built it. No AI summarizes or interprets your work, so the record says exactly what the project contained — nothing invented, nothing paraphrased.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
     <div class="head">
       <div class="eyebrow">How it works</div>
-      <h2>Three parts, <em>one record.</em></h2>
+      <h2>Capture, annotate, <em>archive.</em></h2>
     </div>
     <ol class="steps three">
-      <li><strong>Panel inside After Effects</strong>A panel reads the open project — comps, layers, comments, footage, fonts, and colors — and captures thumbnail frames.</li>
-      <li><strong>Desktop library</strong>A standalone macOS and Windows app keeps each capture as a searchable, offline record, readable without opening After Effects.</li>
-      <li><strong>Notes &amp; handoff</strong>Tag comments, flag render comps, and write the map of the build, then hand the record to the next artist or archive it with the project.</li>
+      <li><strong>Capture</strong>A panel inside After Effects reads the open project — comps, layers, comments, media, fonts, colors, effects — and captures thumbnail frames.</li>
+      <li><strong>Annotate</strong>The artist flags the render comps and adds notes on how the project is wired, while that knowledge is still fresh.</li>
+      <li><strong>Archive &amp; search</strong>The record goes into an offline library on macOS or Windows that anyone on the team can search without launching After Effects.</li>
     </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Who it's for</div>
+      <h2>Everyone who touches <em>the project after it ships.</em></h2>
+    </div>
+    <div class="grid3 small">
+      <div class="card">
+        <span class="mono">Artists</span>
+        <h3>Archive at wrap</h3>
+        <p>Leave a complete, readable record when the job delivers, so your future self — or the next artist — never has to reverse-engineer your work.</p>
+      </div>
+      <div class="card">
+        <span class="mono">Leads &amp; studios</span>
+        <h3>Inherit with confidence</h3>
+        <p>Open a record instead of a broken project and know in minutes what it needs, what's missing, and where to start.</p>
+      </div>
+      <div class="card">
+        <span class="mono">Producers</span>
+        <h3>Answers without the artist</h3>
+        <p>Look up which logo version, fonts, colors, and media a past project used, without After Effects and without chasing anyone down.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -114,9 +177,9 @@ nav: pi
         <tr><th scope="row">Status</th><td>Private testing; early access by request</td></tr>
         <tr><th scope="row">Platforms</th><td>macOS and Windows</td></tr>
         <tr><th scope="row">Works with</th><td>Adobe After Effects</td></tr>
-        <tr><th scope="row">Data</th><td>Local-first library on your machine; team sync planned, opt-in</td></tr>
+        <tr><th scope="row">Storage</th><td>Offline, local-first library on your machine; team sync planned, opt-in</td></tr>
+        <tr><th scope="row">Data source</th><td>Read directly from the project; no AI interpretation</td></tr>
         <tr><th scope="row">Publisher</th><td>{{legal}}, {{city}}, {{state}}</td></tr>
-        <tr><th scope="row">Contact</th><td><a href="mailto:{{email}}?subject=Project%20Intelligence">{{email}}</a></td></tr>
       </table>
     </div>
   </div>
@@ -128,17 +191,19 @@ nav: pi
       <div class="eyebrow">Questions</div>
       <h2>Frequently <em>asked.</em></h2>
     </div>
-    <details><summary>When will Project Intelligence be available?</summary><p>It is in private testing with working artists now. Email us with the subject "Project Intelligence" to join the early-access list and you will hear first when it opens up.</p></details>
-    <details><summary>Where are my project records kept?</summary><p>Project Intelligence is local-first: records live in a library on your own machine, searchable offline. Shared options for teams — local-network and cloud sync — are on the roadmap and will always be opt-in.</p></details>
-    <details><summary>Is Project Intelligence affiliated with Adobe?</summary><p>No. Project Intelligence is an independent product by {{legal}}. Adobe and After Effects are trademarks of Adobe Inc.</p></details>
+    <details><summary>Does Project Intelligence use AI?</summary><p>No. Everything in a record comes straight from the After Effects project or from notes a person wrote. The name is about the knowledge it keeps, not artificial intelligence.</p></details>
+    <details><summary>Does it copy my media files?</summary><p>It records every media item the project used — name, format, and original path — along with thumbnails, so you know what the project needs even when the media is gone. Keep using After Effects' Collect Files to archive the media itself.</p></details>
+    <details><summary>Can I read a record without After Effects?</summary><p>Yes. The library is a standalone macOS and Windows app, so producers and anyone else can search records without an After Effects license.</p></details>
+    <details><summary>When will it be available?</summary><p>It is in private testing with working artists now. Email us with the subject "Project Intelligence" to join the early-access list.</p></details>
+    <details><summary>Is it affiliated with Adobe?</summary><p>No. Project Intelligence is an independent product by {{legal}}. Adobe and After Effects are trademarks of Adobe Inc.</p></details>
   </div>
 </section>
 
 <section class="contact">
   <div class="wrap">
     <div class="mono">Early access</div>
-    <h2 style="margin-top:14px">Want in on testing?</h2>
+    <h2 style="margin-top:14px">Have projects worth keeping?</h2>
     <a class="big" href="mailto:{{email}}?subject=Project%20Intelligence%20early%20access">{{email}}</a>
-    <p style="margin-top:24px;color:color-mix(in srgb,var(--paper) 75%,transparent)">Subject line "Project Intelligence." Tell us what you work on and how big your projects get.</p>
+    <p style="margin-top:24px;color:color-mix(in srgb,var(--paper) 75%,transparent)">Subject line "Project Intelligence." Tell us what you work on and how many projects you'd archive.</p>
   </div>
 </section>
